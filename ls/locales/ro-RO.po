@@ -1,0 +1,137 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: arufmord-cogs\n"
+"POT-Creation-Date: 2024-07-20 22:14+0200\n"
+"PO-Revision-Date: 2024-07-20 20:18\n"
+"Last-Translator: \n"
+"Language-Team: Romanian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: redgettext 3.4.2\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100>0 && n%100<20)) ? 1 : 2);\n"
+"X-Crowdin-Project: arufmord-cogs\n"
+"X-Crowdin-Project-ID: 531090\n"
+"X-Crowdin-Language: ro\n"
+"X-Crowdin-File: /[RUFmord-RUFmord.RUFmord-cogs] main/listfiles/locales/messages.pot\n"
+"X-Crowdin-File-ID: 86\n"
+"Language: ro_RO\n"
+
+#: listfiles\listfiles.py:29
+#, docstring
+msgid "A cog to get a file and replace it from its path from Discord!\n\n"
+"    ⚠️ This cog can be very dangerous, since it allows direct read/write/delete of files on the bot’s machine, considering the fact that reading the wrong file can expose sensitive information like tokens and deleting the wrong file can corrupt the bot or the system entirely.\n"
+"    "
+msgstr "O rotiță pentru a obține un fișier și a-l înlocui din calea sa din Discord!\n\n"
+"    ⚠️ Acest cog poate fi foarte periculos, deoarece permite citirea/scrierea/ștergerea/eliminarea directă a fișierelor de pe mașina botului, având în vedere faptul că citirea unui fișier greșit poate expune informații sensibile, cum ar fi token-urile, iar ștergerea unui fișier greșit poate corupe botul sau sistemul în întregime.\n"
+"    "
+
+#: listfiles\listfiles.py:49
+#, docstring
+msgid "Get a file on the bot's host machine from its path.\n"
+"        `#L10` or `#L10-L30` is supported.\n"
+"        "
+msgstr "Obține un fișier de pe mașina gazdă a robotului din calea acestuia.\n"
+"        Se acceptă `#L10` sau `#L10-L30`.\n"
+"        "
+
+#: listfiles\listfiles.py:54 listfiles\listfiles.py:130
+msgid "Couldn't parse this input."
+msgstr "Nu s-a putut analiza această intrare."
+
+#: listfiles\listfiles.py:66
+msgid "Cowardly refusing to read a file with no size stat. (it may be empty, endless or inaccessible)."
+msgstr "Refuzând cu lașitate să citească un fișier care nu are o statistică de mărime. (acesta poate fi gol, nesfârșit sau inaccesibil)."
+
+#: listfiles\listfiles.py:72
+msgid "Cowardly refusing to read a file >128MB."
+msgstr "Refuzând cu lașitate să citească un fișier >128MB."
+
+#: listfiles\listfiles.py:90 listfiles\listfiles.py:282 listfiles\listfiles.py:292
+#: listfiles\listfiles.py:305 listfiles\listfiles.py:316
+msgid "This file cannot be found on the host machine."
+msgstr "Acest fișier nu poate fi găsit pe computerul gazdă."
+
+#: listfiles\listfiles.py:94 listfiles\editfile.py:157 editfile\editfile.py:286
+#: editfile\editfile.py:296 editfile\editfile.py:309 editfile\editfile.py:320
+msgid "The path you specified refers to a directory, not a file."
+msgstr "Calea pe care ați specificat-o se referă la un director, nu la un fișier."
+
+#: editfile\editfile.py:114 editfile\editfile.py:148
+msgid "There are only {len_lines} lines in this file."
+msgstr "În acest fișier există doar {len_lines} linii."
+
+#: editfile\editfile.py:119
+msgid "Here are the contents of the file `{path}`."
+msgstr "Iată conținutul fișierului `{path}`."
+
+#: editfile\editfile.py:124
+#, docstring
+msgid "Replace a file on the bot's host machine from its path.\n"
+"        `#L10` or `#L10-L30` is supported.\n"
+"        "
+msgstr "Înlocuiți un fișier de pe calculatorul gazdă al robotului din calea acestuia.\n"
+"        Se acceptă `#L10` sau `#L10-L30`.\n"
+"        "
+
+#: editfile\editfile.py:153
+msgid "This original file cannot be found on the host machine."
+msgstr "Acest fișier original nu poate fi găsit pe calculatorul gazdă."
+
+#: editfile\editfile.py:161
+msgid "You must send the command with an attachment that will be used to replace the original file."
+msgstr "Trebuie să trimiteți comanda împreună cu un atașament care va fi utilizat pentru a înlocui fișierul original."
+
+#: editfile\editfile.py:186
+msgid "This is the original/old file available at path `{path}`. Normally, this file has been replaced correctly."
+msgstr "Acesta este fișierul original/vechi disponibil la adresa `{path}`. În mod normal, acest fișier a fost înlocuit corect."
+
+#: editfile\editfile.py:194
+#, docstring
+msgid "Get a cog directory on the bot's host machine from its name."
+msgstr "Obține un director cog de pe mașina gazdă a robotului din numele acestuia."
+
+#: editfile\editfile.py:197
+msgid "Could not find a cog with this name."
+msgstr "Nu a putut fi găsit un angrenaj cu acest nume."
+
+#: editfile\editfile.py:203
+msgid "This cog has not yet stored any persistent data in its data folder."
+msgstr "Această rotiță nu a stocat încă date persistente în dosarul său de date."
+
+#: editfile\editfile.py:223
+#, docstring
+msgid "List all files/directories of a directory from its path."
+msgstr "Listează toate fișierele/directoarele unui director din calea acestuia."
+
+#: editfile\editfile.py:227 editfile\editfile.py:251
+msgid "This directory cannot be found on the host machine."
+msgstr "Acest director nu poate fi găsit pe calculatorul gazdă."
+
+#: editfile\editfile.py:231 editfile\editfile.py:255
+msgid "The path you specified refers to a file, not a directory."
+msgstr "Calea pe care ați specificat-o se referă la un fișier, nu la un director."
+
+#: editfile\editfile.py:247
+#, docstring
+msgid "Make a tree with all files/directories of a directory from its path."
+msgstr "Realizează un arbore cu toate fișierele/directoarele unui director din calea acestuia."
+
+#: editfile\editfile.py:278
+#, docstring
+msgid "Rename a file."
+msgstr "Redenumiți un fișier."
+
+#: editfile\editfile.py:298
+msgid "The `{path}` file has been renamed."
+msgstr "Fișierul `{path}` a fost redenumit."
+
+#: editfile\editfile.py:302
+#, docstring
+msgid "Delete a file."
+msgstr "Ștergeți un fișier."
+
+#: editfile\editfile.py:322
+msgid "The `{path}` file has been deleted."
+msgstr "Fișierul `{path}` a fost șters."
+
