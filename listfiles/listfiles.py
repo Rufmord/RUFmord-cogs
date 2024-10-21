@@ -39,7 +39,7 @@ class ListFiles(Cog):
 
 
     @listfiles.command()
-    @listfiles.aliases(["dir"])
+    @listfiles.aliases("listdir", aliases=["dir", ".", ""])
     async def listdir(self, ctx: commands.Context, *, path: str) -> None:
         """List all files/directories of a directory from its path."""
         path = Path(CogsUtils.replace_var_paths(path, reverse=True))
@@ -63,8 +63,7 @@ class ListFiles(Cog):
         message = CogsUtils.replace_var_paths(message)
         await Menu(pages=message, lang="ini").start(ctx)
 
-    @listfiles.command()
-    @listfiles.aliases(["tree"])
+    @listfiles.command("treedir", aliases=["tree"])
     async def treedir(self, ctx: commands.Context, *, path: str) -> None:
         """Make a tree with all files/directories of a directory from its path."""
         path = Path(CogsUtils.replace_var_paths(path, reverse=True))
