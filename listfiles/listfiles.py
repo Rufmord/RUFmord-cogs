@@ -39,7 +39,7 @@ class ListFiles(Cog):
 
 
     @listfiles.command()
-    @listfiles.aliases(["dir", "."])
+    @listfiles.aliases(["dir"])
     async def listdir(self, ctx: commands.Context, *, path: str) -> None:
         """List all files/directories of a directory from its path."""
         path = Path(CogsUtils.replace_var_paths(path, reverse=True))
