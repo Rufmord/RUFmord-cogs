@@ -31,14 +31,14 @@ class ListFiles(Cog):
     ⚠️ This cog can be very dangerous, since it allows direct read/write/delete of files on the bot’s machine, considering the fact that reading the wrong file can expose sensitive information like tokens and deleting the wrong file can corrupt the bot or the system entirely.
     """
 
-    @commands.is_owner()
+    @commands.admin()
     @commands.hybrid_group(aliases=["ls"])
     async def listfiles(self, ctx: commands.Context) -> None:
         """Commands group to get a file and replace it from its path."""
         pass
 
 
-    @listfiles.command("listdir", aliases=["dir", ".", ""])
+    @listfiles.command("listdir", aliases=["dir", "."])
     async def listdir(self, ctx: commands.Context, *, path: str) -> None:
         """List all files/directories of a directory from its path."""
         path = Path(CogsUtils.replace_var_paths(path, reverse=True))
